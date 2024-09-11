@@ -1,0 +1,26 @@
+.contact-body{
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-div{
+    margin: 20px 0;
+}
+
+.contact-link{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.popup{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

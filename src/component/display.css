@@ -1,0 +1,247 @@
+*{
+    font-family: sans-serif;
+}
+
+.main-body{
+    margin: 64px auto;
+    height: 100%;
+}
+
+.main-info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: start;
+    width: 100%;
+    gap: 64px 8px;
+}
+
+.div-top{
+    display: flex;
+    flex-direction: column;
+    gap: 24px 8px;
+    align-items: center;
+}
+
+.sub-div-top{
+    display: flex;
+    flex-direction: column;
+    gap: 24px 8px;
+    align-items: center;
+}
+
+.main-heading{
+    font-size: 32px;
+    text-align: center;
+}
+
+.edit{
+    color: #146ef5;
+    text-transform: capitalize;
+}
+
+.main-sub-heading{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.heading-link{
+    font-weight: normal;
+    text-decoration: none;
+    color: #146ef5;
+    padding-left: 5px;
+}
+
+.heading-link:hover{
+    text-decoration: underline;
+}
+
+.search-bar{
+    width: 600px;
+}
+
+.heading-btn-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+}
+
+.heading-btn{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 3px 6px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.body-sub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.body-sub-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.main-content{
+    gap: 64px 8px;
+    margin-top: 32px;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(auto fill , minmax(294px, 2fr));
+    gap: 24px;
+}
+
+.grid-items{
+    gap: 16px 8px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: start;
+    width: 100%;
+    margin: 5px;
+}
+
+.container{
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.grid-img{
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+    backface-visibility: hidden;
+}
+
+.container:hover .grid-img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    padding: 15px 15px;
+  }
+
+.container:hover .info{
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 2px 2px gray;
+}
+
+.grid-link{
+    color: black;
+    font-weight: 400;
+}
+
+.grid-elem-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popup-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup-item-ex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-subitem{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+.popup-link{
+    color: #146ef5;
+}
+
+.popup-link:hover{
+    text-decoration: underline;
+}
+
+.popup-label-high{
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.popup-label-low{
+    font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    .main-body{
+        max-width: 1344px;
+        padding: 0 32px;
+    }
+}
+@media (min-width: 768px) {
+    .main-heading{
+        font-size: 60px;
+    }
+    .content-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

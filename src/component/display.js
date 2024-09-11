@@ -285,7 +285,7 @@ function Display() {
 										checked={checked}
 										onChange={handleCheckChange}
 										onClick={() => {
-											window.location.href = `https://webflow.com/made-in-webflow?cloneable=${checked}`;
+											window.location.href = `https://webflow.com/made-in-webflow?cloneable=${!checked}`;
 										}}
 									/>
 									<span

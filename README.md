@@ -1,5 +1,7 @@
 BITS Blockchain recruitment task-1
 
+blockchain-backend folder contains the backend task while the rest is frontend task.
+
 Made a responsive clone of Webflow
 
 Also added a Contact Us button at the end of the page to show that the site can navigate to different pages.

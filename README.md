@@ -1,3 +1,9 @@
+BITS Blockchain recruitment task-1
+
+Made a responsive clone of Webflow
+
+Also added a Contact Us button at the end of the page to show that the site can navigate to different pages.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
